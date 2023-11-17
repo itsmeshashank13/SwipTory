@@ -7,8 +7,10 @@ function Header() {
     <>
         <div className={styles.header}>
             <h1>SwipTory</h1>
-            <button className={styles.registerButton}>Register Now</button>
-            <button className={styles.SignInButton}>Sign In</button>
+            <span>
+                <button className={styles.registerButton}>Register Now</button>
+                <button className={styles.signInButton}>Sign In</button>
+            </span>
         </div>
     </>
   )
