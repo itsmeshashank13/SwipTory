@@ -1,0 +1,55 @@
+.wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+
+    .card {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        padding: 2rem;
+        height: 130px;
+        width: 130px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper > span:nth-child(1) {
+    background-image: url('../../Assets/All.jpg');
+}
+
+.wrapper > span:nth-child(2) {
+    background-image: url('../../Assets/Food.jpg');
+}
+
+.wrapper > span:nth-child(3) {
+    background-image: url('../../Assets/Health.jpg');
+}
+
+.wrapper > span:nth-child(4) {
+    background-image: url('../../Assets/Travel.jpg');
+}
+
+.wrapper > span:nth-child(5) {
+    background-image: url('../../Assets/Movies.jpg');
+}
+
+.wrapper > span:nth-child(6) {
+    background-image: url('../../Assets/Education.jpg');
+}
+
+.wrapper > span:nth-child(7) {
+    background-image: url('../../Assets/Sports.jpg');
+}
+

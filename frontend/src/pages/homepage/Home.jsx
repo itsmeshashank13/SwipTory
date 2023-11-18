@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from "./home.module.css";
 import Header from '../../components/header/Header';
+import HeadBottom from '../../components/headBottom/HeadBottom';
 
 function Home() {
   return (
     <>
     <Header />
+    <HeadBottom />
     <div>
         
     </div>
