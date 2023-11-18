@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 2.5rem;
+    padding: 0 2.5rem;
+    box-shadow: 0 0 20px #dbd9d9;
 }
 
 .header button {
     width: 140px;
-    margin-right: 2rem;
     padding: 12px 20px;
     border: none;
     border-radius: 50px;
@@ -17,6 +17,7 @@
 
 .registerButton {
     background-color: #FF7373;
+    margin-right: 2rem;
 }
 
 .signInButton {
