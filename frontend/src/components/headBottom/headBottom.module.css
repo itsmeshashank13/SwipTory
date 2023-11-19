@@ -9,15 +9,16 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        background-size: cover;
+        background-position: center;
         margin: 2rem;
         padding: 2rem;
         height: 130px;
         width: 130px;
-        background-size: cover;
-        background-position: center;
         border-radius: 30px;
         color: #ffffff;
         text-align: center;
+        box-shadow: 5px 5px 10px rgb(181, 173, 173);
     }
 }
 
