@@ -4,12 +4,12 @@ import { GoEye } from "react-icons/go";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 
-function login() {
+function login({ onClose }) {
   return (
     <>
-    <div className={styles.popupModal}></div>
+    <div className={styles.popupModal} onClick={onClose}></div>
     <div className={styles.modalContent}>
-      <IoCloseCircleOutline />
+      <IoCloseCircleOutline onClick={onClose}/>
       <h3>Login to SwipTory</h3>
       <span>
         <label htmlFor="username"></label>
