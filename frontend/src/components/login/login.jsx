@@ -9,15 +9,16 @@ function login({ onClose }) {
     <>
     <div className={styles.popupModal} onClick={onClose}></div>
     <div className={styles.modalContent}>
-      <IoCloseCircleOutline onClick={onClose}/>
+      <IoCloseCircleOutline className={styles.cross} onClick={onClose}/>
       <h3>Login to SwipTory</h3>
       <span>
-        <label htmlFor="username"></label>
-        <input type="text" name="username" id="username" />
-        <label htmlFor="username"></label>
-        <input type="text" name="username" id="username" /> <GoEye />
+        <label htmlFor="username">Username</label>
+        <input type="text" name="username" id="username" placeholder='Enter username here'/>
+        <br />
+        <label htmlFor="password">Password</label>
+        <input type="password" name="password" id="password" placeholder='Enter password here'/> <GoEye />
       </span>
-      <button>Login</button>
+      <button className={styles.login}>Login</button>
     </div>
     </>
   )
