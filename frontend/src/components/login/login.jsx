@@ -4,7 +4,7 @@ import { GoEye } from "react-icons/go";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 
-function login({ onClose }) {
+function Login({ onClose }) {
   return (
     <>
     <div className={styles.popupModal} onClick={onClose}></div>
@@ -24,4 +24,4 @@ function login({ onClose }) {
   )
 }
 
-export default login;
+export default Login;
