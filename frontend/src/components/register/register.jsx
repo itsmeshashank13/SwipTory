@@ -17,13 +17,20 @@ function Register({ onClose }) {
     <div className={styles.modalContent}>
       <IoCloseCircleOutline className={styles.cross} onClick={onClose}/>
       <h3>Register to SwipTory</h3>
-      <span>
-        <label htmlFor="username">Username</label>
-        <input type="text" name="username" id="username" placeholder='Enter Username here'/>
-        <label htmlFor="password">Password</label>
-        <input type={showPassword ? "text" : "password"} name="password" id="password" placeholder='Enter Password here'/> 
-        <GoEye className={styles.eyeIcon} onClick={handleShowPassword} />
-      </span>
+      
+        <div className={styles.formGroup}>
+          <div className={styles.formField}>
+            <label htmlFor="username">Username</label>
+            <input type="text" name="username" id="username" placeholder='Enter Username here'/>
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="password">Password</label>
+            <div className={styles.passwordContainer}>
+              <input type={showPassword ? "text" : "password"} name="password" id="password" placeholder='Enter Password here'/> 
+              <GoEye className={styles.eyeIcon} onClick={handleShowPassword} />
+            </div>
+          </div>
+        </div>
       <button className={styles.register}>Register</button>
     </div>
     </>

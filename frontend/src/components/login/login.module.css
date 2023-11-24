@@ -8,29 +8,46 @@
 }
 
 .modalContent {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    position: fixed;
-    margin: 0;
-    padding: 10px 25px;
+    background-color: #fff;
+    padding: 2rem 2rem;
     border-radius: 8px;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    font-weight: 600;
+    border-radius: 20px;
 }
 
-.modalContent span {
+.formGroup {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-bottom: 10px;
 }
 
-span:first-child {
-    margin-bottom: 20px;
+.formField {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.formField input,label{
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.formField input {
+    margin-left: 2rem;
+    min-width: 250px;
+    font-family: Poppins;
+}
+
+.eyeIcon {
+    position: fixed;
+    right: 55px;
+    top: 50%;
+    transform: translate(0, 140%);
+    cursor: pointer;
 }
 
 .cross {
@@ -41,16 +58,13 @@ span:first-child {
     font-size: 30px;
 }
 
-.register {
+.login {
     background-color: #73ABFF;
     border: none;
     margin-top: 10px;
     align-self: center;
-}
-
-.eyeIcon {
-    position: relative;
-    right: -80%;
-    transform: translateY(-50%);
-    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
 }
