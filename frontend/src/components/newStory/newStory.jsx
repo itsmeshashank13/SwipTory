@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoCloseCircleOutline } from "react-icons/io5";
 import styles from "./newStory.module.css";
 
 
-function newStory() {
+function NewStory({ onClose }) {
   return (
     <>
       <div className={styles.popupModal}></div>
       <div className={styles.modalContent}>
-      <IoCloseCircleOutline />
+      <IoCloseCircleOutline className={styles.cross} onClick={onClose}/>
       <small>Add upto 6 slides</small>
         <span>
           <h3>Slide 1</h3>
@@ -42,4 +42,4 @@ function newStory() {
   )
 }
 
-export default newStory;
+export default NewStory;

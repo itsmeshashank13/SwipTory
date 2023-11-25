@@ -1,0 +1,28 @@
+.popupModal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(151, 149, 149, 0.563);
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.cross {
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}

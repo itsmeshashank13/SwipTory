@@ -1,25 +1,72 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  box-shadow: 0 0 20px #dbd9d9;
+}
+
+.header > div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 2.5rem;
-    box-shadow: 0 0 20px #dbd9d9;
 }
 
 .header button {
-    width: 140px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 50px;
-    color: #ffffff;
-    font-size: Medium;
+  width: 140px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: Medium;
 }
 
 .registerButton {
-    background-color: #FF7373;
-    margin-right: 2rem;
+  background-color: #ff7373;
+  margin-right: 2rem;
 }
 
 .signInButton {
-    background-color: #73ABFF;
+  background-color: #73abff;
+  margin-right: 2rem;
+}
+
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: 0.2s;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
 }
