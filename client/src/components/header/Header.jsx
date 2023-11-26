@@ -19,6 +19,7 @@ function Header({ onLoginClick, onRegisterClick }) {
           <button className={styles.signInButton} onClick={onLoginClick}>
             Sign In
           </button>
+          
           <div
             className={`${styles.hamburger} ${
               isMenuActive ? styles.active : ""

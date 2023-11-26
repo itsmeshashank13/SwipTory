@@ -4,7 +4,7 @@ import HeadBottom from '../../components/headBottom/HeadBottom';
 import Login from '../../components/login/Login';
 import Register from '../../components/register/Register';
 import NewStory from '../../components/newStory/NewStory';
-
+import YourStories from '../../components/yourStories/YourStories';
 
 
 function Home() {
@@ -33,17 +33,18 @@ function Home() {
   const closeStoryModal = ()=> {
     setIsStoryModalOpen(false);
   };
+  
 
   return (
     <>
-    <Header onLoginClick={openLoginModal} onRegisterClick={openRegisterModal} onStoryClick={openStoryModal}/>
-    <HeadBottom />
-    <div>
-        
-    </div>
-    {isLoginModalOpen && <Login onClose={closeLoginModal} />}
-    {isRegisterModalOpen && <Register onClose={closeRegisterModal} />}
-    {isStoryModalOpen && <NewStory onClose={closeStoryModal} />}
+      <Header onLoginClick={openLoginModal} onRegisterClick={openRegisterModal} onStoryClick={openStoryModal}/>
+      <HeadBottom />
+      <YourStories />
+      
+      
+      {isLoginModalOpen && <Login onClose={closeLoginModal} />}
+      {isRegisterModalOpen && <Register onClose={closeRegisterModal} />}
+      {isStoryModalOpen && <NewStory onClose={closeStoryModal} />}
     </>
   )
 }

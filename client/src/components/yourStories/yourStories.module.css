@@ -1,0 +1,50 @@
+.container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.wrapper {
+    display: flex;
+    overflow-x: auto;
+    height: 290px;
+    scrollbar-width: none;
+    text-align: left;
+
+    .card {
+        position: relative;
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        margin-left: 2rem;
+        flex-wrap: wrap;
+        height: 260px;
+        width: 170px;
+        border-radius: 10px;
+        color: #ffffff;
+        background-color: #000000;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgb(181, 173, 173);
+    }
+}
+
+.card p {
+    font-size: 10px;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.edit {
+    display: flex;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 20px;
+    padding: 4px 8px;
+    box-shadow: 3px 3px 10px rgb(147, 145, 145);
+}
